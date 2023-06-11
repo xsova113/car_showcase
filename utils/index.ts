@@ -13,8 +13,8 @@ export const fetchCars = async (filters: FilterProps) => {
       year: filters.year,
     },
     headers: {
-      "X-RapidAPI-Key": "7c9a873c78msh985b21020dd268ap101d58jsn856fac66b1ec",
-      "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
+      "X-RapidAPI-Key": process.env.X_RapidAPI_Key,
+      "X-RapidAPI-Host": process.env.X_RapidAPI_Host,
     },
   };
 
